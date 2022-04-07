@@ -1,1 +1,1 @@
-# Progetto-settimana-6---Jquery
+# Progetto-settimana-6-Jquery
