@@ -1,62 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat Alternates', sans-serif;
+	padding-top: 6em;
+	height: 100vh;
+	background-image: url("https://www.mooseek.com/screenshots/2_sfondi_samsung_galaxy_s22_4k.jpg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: inline-block;
+header,
+button,
+h4 {
+	color: rgb(224, 234, 243);
+	text-shadow: 2px 3px 3px rgba(52, 17, 73, 0.699);
 }
 
-.row {
-    width: 100%;
-    max-width: 1400px;
-    min-width: 1250px;
-    margin: auto;
+h4 {
+	margin-top: 0.5em;
 }
 
-.box {
-    width: 50%;
-    margin: auto;
+header {
+	padding: 1em;
+	border-radius: 25px;
+	background-color: rgb(116, 24, 78);
+	box-shadow: 2px 3px 3px rgba(210, 7, 176, 0.699);
 }
 
-.numclicks,
-h2 {
-    text-align: left;
+.card {
+	position: relative;
+	transform-style: preserve-3d;
+	transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	box-shadow: 2px 3px 3px rgba(52, 17, 73, 0.699);
 }
 
-.images {
-    background: rgba(0,218,219,1);
-    width: 140px;
-    height: 140px;
-    margin: 5px;
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 10px;
+.face,
+.back {
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
 }
 
-.images img {
-    padding: 5px;
-    display: none;
+.face {
+	transform: rotateY(-180deg);
 }
+
+.toggleCard {
+	transform: rotateY(180deg);
+}
+
+
+
+
+#modal {
+	display: none;
+	margin: auto;
+	padding: 2em;
+	width: 40%;
+	background-color: #fff;
+	color: rgb(15, 15, 15);
+	text-shadow: 2px 3px 3px rgba(52, 17, 73, 0.699);
+	border-radius: 50px;
+	box-shadow: 2px 3px 3px rgba(153, 5, 131, 0.699);
+	position: fixed;
+	top: 30%;
+	left: 30%;
+}
+
 
 .restart {
-    text-align: center;
+	text-align: center;
+	margin-top: 80px;
+
 }
 
-#Restart {
-    font-family: 'Montserrat Alternates', sans-serif;
-    float: left;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 10px 10px;
-    background: rgb(15, 15, 15);
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
+#Restart,
+button {
+	font-family: 'Montserrat Alternates', sans-serif;
+	float: center;
+	margin-top: 20px;
+	border-radius: 10px;
+	padding: 10px 10px;
+	background: rgb(15, 15, 15);
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+
 }
