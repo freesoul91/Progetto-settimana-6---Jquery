@@ -161,7 +161,8 @@ $(() => {
 				playerLives--;
 				playerLivesCount.text(playerLives);
 				if (playerLives == 0) {
-					alert('Hai perso! Ritenta, sarai più fortunatə!');
+					alert('Hai perso! Ritenta!');
+					window.location.reload()
 				};
 			};
 		};

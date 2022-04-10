@@ -22,9 +22,9 @@
 		<h4>Tentativi a disposizione: <span class="playerLivesCount"></span> - Click totali: <span
 				class="clickNumbers"></span></h4>
 		<div class="container"></div>
-		<div class="restart">
+		<div id="Restart">
 
-			<button id="Restart" onclick="window.location.reload()">Ricomincia</button>
+			<button class="restart" onclick="window.location.reload()">Ricomincia</button>
 		</div>
 
 	</main>
@@ -32,8 +32,7 @@
 	<div id="modal">
 		<div class="content">
 			<h2>Complimenti! <br>Hai vinto!</h2><br>
-			<p><button type="button" class="button" onclick="restart()" value="Altra partita">Gioca ancora</button></p>
-		</div>
+			<button class="restart" onclick="window.location.reload()">Gioca ancora</button>		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

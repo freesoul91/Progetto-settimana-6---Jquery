@@ -18,9 +18,7 @@ body {
 	text-align: center;
 }
 
-header,
-button,
-h4 {
+header,h4 {
 	color: rgb(224, 234, 243);
 	text-shadow: 2px 3px 3px rgba(52, 17, 73, 0.699);
 }
@@ -83,7 +81,7 @@ header {
 
 }
 
-#Restart,
+
 button {
 	font-family: 'Montserrat Alternates', sans-serif;
 	float: center;
